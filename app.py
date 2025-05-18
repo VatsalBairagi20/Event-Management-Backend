@@ -15,7 +15,7 @@ app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 
 # CORS config
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})  # For dev frontend
+CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000","https://paruluniversityevents.netlify.app"}})  # For dev frontend
 
 # MongoDB
 mongo = PyMongo(app)
